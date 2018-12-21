@@ -1,0 +1,260 @@
+<html>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    float:center;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+h2{
+  font-size: 20px;
+  float:center;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+.picture
+  {
+    width:80%;
+    height:500px;
+    margin-left:10%;
+
+  }
+  h1{
+    font-size: 25px;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+</style>
+<body>
+<div class="topnav">
+  <a href="home2.html">Home</a>
+  <a href="queries.html">Query</a>
+  <a href="donate.html">Donate</a>
+  <a href="login.html">Login</a>
+
+</div>
+<br>
+<img src="query.jpg" alt="Flowers in Chania" class="picture">
+<h2>FAQS</h2>
+<ol>
+<li>
+<div class="dropdown">
+  <span><h3>Q: What is a Voluntary Organization (VO) / Non Governmental Organization (NGO)?</h3></span>
+  <div class="dropdown-content">
+    <p>Voluntary organizations (VOs) / Non Governmental Organizations (NGOs) include organizations engaged in public service, based on ethical, cultural, social, economic, political, religious, spiritual, philanthropic or scientific & technological considerations. VOs include formal as well as informal groups, such as: community-based organizations (CBOs); non-governmental development organizations (NGDOs); charitable organizations; support organizations; networks or federations of such organizations; as well as professional membership associations.
+
+VOs / NGOs should broadly have the following characteristics:
+<ul>
+<li>They are private, i.e., separate from Government
+<li>They do not return profits generated to their owners or directors
+<li>They are self-governing, i.e., not controlled by Government
+<li>They are registered organizations or informal groups, with defined aims and objectives
+</ul>
+In India a Voluntary Organization / Non Governmental Organization can be registered as Trusts, Societies, or a private limited nonprofit company, under section-25 Company of the Indian Companies Act, 1956.</p>
+  </div>
+</div>
+<li><div class="dropdown">
+  <span><h3>Q: Is individual registration allowed?</h3></span>
+  <div class="dropdown-content">
+    <p>As of now no Individual (person) Registration is allowed</p>
+  </div>
+</div>
+<li><div class="dropdown">
+  <span><h3>Q: What are the facilities provided by NOBLE CAUSE FOUNDATION ?</h3>
+</span>
+  <div class="dropdown-content">
+    <p>The NGO-PS helps VOs/NGOs to:
+<ul>
+	<li>Get details of existing VOs / NGOs across India
+<li>Get details of the schemes of the participating Ministries/Departments/Government Bodies (mentioned at home page) offering grants to VOs / NGOs
+<li>Apply on - line for NGO grants
+</ul>  </div>
+</div>
+<li><div class="dropdown">
+  <span><h3>Q: How can one apply for NGO grants?</h3></span>
+  <div class="dropdown-content">
+    <p>
+    	<ul>
+    		<li>To apply for grants the first step is to create your account/sign-up and create your own User ID and Password.
+<li>Once you login into your account, there are various links available, for viewing the department-wise schemes, providing NGO grants. Select the scheme under which you want to apply for a grant. The link to your selected scheme will provide you with all the details of the scheme - format in which you have to apply, documents you need to attach etc.
+<li>You can get the details of the Nodal Officers for the concerned scheme, from the website. Any queries regarding schemes or about how to proceed for schemes and grants will be clarified by the respective Nodal Officers (List and Contact Details are available on the website)</ul></p>
+	
+  </div>
+</div>
+<li><div class="dropdown">
+  <span><h3>Q: I am working with a new email id. How to inform it to NGO Darpan?</h3></span>
+  <div class="dropdown-content">
+    <p>To edit your email id in your profile, you need to log into the website using your UserID and Password, from the Login box available in http://ngo.india.gov.in, under the table with heading as VO/NGO Signing In for Signed Up users.
+
+Once you are Logged In, on the Right Hand Side click on Edit Profile.
+
+Under Contact Details, remove the old email id and write your new email id.</p>
+  </div>
+</div>
+
+</ol>
+
+<br>
+<h1>If u have any further queries click this button</h1>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">QUERY</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      
+      <p>Please fill this form if you have any queries</p>
+      <hr>
+      <label for="email"><b>Name</b></label>
+      <input type="text" placeholder="Enter name" name="email" required>
+      <label for="email"><b>Phone.No</b></label>
+      <input type="text" placeholder="Enter phone number" name="email" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="email"><b>City</b></label>
+      <input type="text" placeholder="Enter city" name="email" required>
+      <label for="email"><b>Query</b></label>
+      <input type="text" placeholder="Enter query" name="email" required>
+      
+      
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn"><a href="queries.html">SUBMIT</a></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .column {   
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+.rightcolumn {   
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+}
+.leftcolumn {   
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.card {
+    padding: 5px;
+    margin-top: 5px;
+}
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+h2{
+  font-size: 20px;
+  padding-left: 50px;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+  </style>
+</head>
+<body>
+<ul>
+  <li><a href="home2.html">Home</a></li>
+  
+  
+</ul>
+<div class="container">
+   
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="tks.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      
+    </div>
+    <h2>
+    <i><marquee DIRECTION="LEFT">We will reach you soon to collect the donation......</marquee></i></h2>
+    <br>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>My updated Contribution</h1>
+   <div id="piechart"></div>
+</div>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+   ['Donated', 8],
+  ['Coupons', 2],
+  ['Points', 5],
+  ['Awards', 0],
+ ]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+ <div class="row">
+  <div class="rightcolumn">
+    <div class="card">
+      <h1>My new Coupon</h1>
+      <img src="c6.jpg" style="width:100%;">
+    </div>
+  </div>
+</div>
+   <h2>
+    <i><marquee DIRECTION="RIGHT">You can use the coupon in any Brandfactory store......</marquee></i></h2>
+</body>
+</html>

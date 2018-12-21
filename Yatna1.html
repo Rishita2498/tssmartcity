@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Yatna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("akshay.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="home.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="query.html" class="w3-button w3-block w3-black">QUERY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="login.html" class="w3-button w3-block w3-black">LOGIN</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+	<header class="bgimg w3-display-container w3-grayscale-min">
+	<img src="yatna.jpg" style="width:100%">
+	<div class="w3-display-middle w3-center">
+    
+  </div>
+</header>
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE NGO</span></h5>
+    <p>"Yatna - A Society" is a social service organization working towards a better society. True to its name, "Yatna" perseveres to bring in a positive change by uniting people who share the common vision of a developed India, and pay back to the society which helped us.
+
+A Vision of Developed India
+"Yatna - A Society" vision is directed at realizing the dream of a self sufficient and self reliant India, which has achieved remarkable progress in all the areas that define human achievement.
+
+Mission Possible
+All big missions have humble beginnings and so is "Yatna - A Society" is endeavor. Our mission is to address issues like poverty and ignorance that are threatening and weakening our country'sprogress.
+
+We aim to achieve literacy, eradicate poverty, abolish child labour, uplift and instill confidence among the weaker sections of the society.Our NGO services focus on assessing individual strengths and needs, setting personal goals and providing an environment that encourages overall growth and development.
+
+ </p>
+     
+    </div>
+     </div>
+</div>
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7257979901606!2d78.41947041487686!3d17.424941888056132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972b3819db73%3A0xa52c8a9c201a4e89!2sYatna+NGO!5e0!3m2!1sen!2sin!4v1520917388933" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <br>
+    <br>
+    <br>
+    
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>NGO</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hyderabad, TS<br>Yatna - A Society
+8-2-120/86/9/A, Plot No - 22
+Road No:2,Banjara Hills
+Opp: LV Prasad Eye Hospital
+Hyderabad - 500 034 INDIA
+</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>  info@yatna.org</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91(40) 64555247</p>
+      </div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+</body>
+</html>

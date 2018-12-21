@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Akshay Org</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("akshay.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="home.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="query.html" class="w3-button w3-block w3-black">QUERY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="login.html" class="w3-button w3-block w3-black">LOGIN</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+	<header class="bgimg w3-display-container w3-grayscale-min">
+	<img src="akshay">
+	<div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">Akshay Patra<br>Organisation</span>
+  </div>
+</header>
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE NGO</span></h5>
+    <p>The Akshaya Patra Foundation is a not-for-profit organisation feeding millions of underserved children in India. We are committed to eradicating two most critical issues - hunger and malnutrition among children by implementing the Mid-Day Meal Programme in government schools and government-aided schools. Carrying out the world’s largest feeding programme, Akshaya Patra aims to not only fight hunger but also bring children to school.
+
+</p>
+    <p>In Telangana – a southeastern state in India, we have a centralised kitchen in the capital city - Hyderabad which reaches out to 62,020 children in 463 schools.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"You can make donations in memory of someone who meant a lot to you, to honour them and cherish the memories they have left behind. It is a great way of showing your love and respect.<br> Your donation is valuable and is appreciated for its thoughtfulness."
+
+</i></p>
+     
+    </div>
+     </div>
+</div>
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d243574.39420077688!2d78.24989820263515!3d17.466896417575416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sakshaya+patra+organisation+hyderabad!5e0!3m2!1sen!2sin!4v1520869864578" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <br>
+    <br>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">JOIN US</span></h5>
+     <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder=" enter your Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="enter your email" required name="email"></p>
+<p>
+<select id="ph"><option>+91</option><option>+92</option><option>+93</option><option>+94</option></select>
+
+<input type="text" name="phone" id="phone" placeholder="Enter your mobile number"> <br>
+     <p> <input type="date" name="date" id="myDate" placeholder="date">
+
+<script>
+function myFunction() {
+    document.getElementById("myDate").value = "2014-02-09";
+}
+</script>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="enter your address" required name="address"></p>
+
+
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button>
+    </form>
+  </div>
+</div>
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>NGO</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hyderabad, TS<br>The Akshaya Patra Foundation
+Plot # 2 , Kesari Nilayam
+Krishna Nagar Colony
+Picket, Secunderabad
+Hyderabad - 500015
+Telangana</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>infodesk@akshayapatra.org</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>91-040-40031456</p>
+      </div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>glow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("weep.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="home2.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="queries.html" class="w3-button w3-block w3-black">QUERY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="login.html" class="w3-button w3-block w3-black">LOGIN</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+	<header class="bgimg w3-display-container w3-grayscale-min">
+	<img src="glowtide.jpg" style="width:100%">
+	<div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Weep Welfare<br>Organisation</span>
+  </div>
+</header>
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE NGO</span></h5>
+    <p>We are a family of helping hands who care and strive to bring happiness in the lives of under privileged and unlooked BPL community. The organization was formally established in the year 2013 but our actions for society development trace long back.We collect clean and untouched leftover food from hotels and restaurants,Pack them and Distribute them among the needy homeless, Shelter homes, Orphanages, Old-age homes and Slum schools.
+</p>
+    <p>In Telangana – a southeastern state in India, we have a centralised kitchen in the capital city - Hyderabad which reaches out to 62,020 children in 463 schools.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"To live up to a day when there would be no person on road sleeping without even a single day meal.We work on every direction to spread as much as happiness we can around us.We do not want India to be an economic superpower. We want India to be a happy country.
+
+
+
+
+
+</i></p>
+     
+    </div>
+     </div>
+</div>
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7612.66698765622!2d78.48016985265355!3d17.44374510630847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16b830c2a706f6b8!2sGlow+Tide!5e0!3m2!1sen!2sin!4v1520914186627" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <br>
+    <br>
+    
+  </div>
+</div>
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>NGO</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hyderabad, TS<br>The Glow Tide Foundation
+8-3-168/B/30/A, 
+LaxmiNagar,
+ SR Nagar,
+  Viman Nagar, 
+  Hyderabad,
+   Telangana 500038.
+</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i> glowtidengo@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>077022 09484</p>
+      </div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>AASHRI SOCIETY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("aashri.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="home1.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="queries.html" class="w3-button w3-block w3-black">QUERY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="login.html" class="w3-button w3-block w3-black">LOGIN</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+	<header class="bgimg w3-display-container w3-grayscale-min">
+	<img src="akshay">
+	<div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">AASHRI SOCIETY</span>
+  </div>
+</header>
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE NGO</span></h5>
+    <p>Aashri Society is an Non-Government Orgonisation. We want to en light the future of OUR SOCIETY through accompanying themselves in our organisation.. through their support, wishes and blessings. Here WE r with a great motive SERVE SOCIETY through our organisation AASHRI. 
+
+</p>
+    
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"You can make donations in memory of someone who meant a lot to you, to honour them and cherish the memories they have left behind. It is a great way of showing your love and respect.<br> Your donation is valuable and is appreciated for its thoughtfulness."
+
+</i></p>
+     
+    </div>
+     </div>
+</div>
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d121820.38597366188!2d78.34000018612801!3d17.41720678227343!3m2!1i1024!2i768!4f13.1!2m1!1saashri+society+office+hyderabad+telangana!5e0!3m2!1sen!2sin!4v1520917410683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <br>
+    <br>
+    
+       </div>
+</div>
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>NGO</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Hyderabad, TS<br>H.No : 10-75/2, Opp:HP Petrol pump, Gandigudem Road,Balaji Nagar, Bollaram village, Jinnaram mandal, Sangareddy District - 502325 </p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>aashrifoundation@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>9293414444</p>
+      </div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+</body>
+</html>
